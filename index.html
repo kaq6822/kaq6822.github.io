@@ -3,41 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="개인 웹사이트">
-    <title>내 GitHub Pages 사이트</title>
+    <meta name="description" content="개발자 포트폴리오 - 소개 및 프로젝트">
+    <title>Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <h1>내 웹사이트</h1>
-            <ul>
-                <li><a href="#home">홈</a></li>
-                <li><a href="#about">소개</a></li>
-                <li><a href="#contact">연락처</a></li>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">홈</a></li>
+                <li><a href="#about" class="nav-link">소개</a></li>
+                <li><a href="#projects" class="nav-link">프로젝트</a></li>
+                <li><a href="#contact" class="nav-link">연락처</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero">
-            <h2>환영합니다</h2>
-            <p>GitHub Pages에 오신 것을 환영합니다.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">안녕하세요 👋</h1>
+                    <h2 class="hero-subtitle">개발자 [Your Name]입니다</h2>
+                    <p class="hero-description">
+                        열정적으로 새로운 기술을 배우고<br>
+                        의미있는 서비스를 만들어가는 개발자입니다.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                        <a href="#contact" class="btn btn-secondary">연락하기</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card">
+                        <div class="code-snippet">
+                            <span class="code-line">const developer = {</span>
+                            <span class="code-line">  name: "Your Name",</span>
+                            <span class="code-line">  passion: "coding",</span>
+                            <span class="code-line">  goal: "innovation"</span>
+                            <span class="code-line">};</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="about" class="content">
-            <h2>소개</h2>
-            <p>여기에 자기소개 내용을 작성하세요.</p>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="about-icon">💻</div>
+                        <h3>개발 경험</h3>
+                        <p>웹 개발 및 다양한 프로젝트 경험을 보유하고 있습니다. 최신 기술 스택을 활용하여 효율적인 솔루션을 제공합니다.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">🎯</div>
+                        <h3>문제 해결</h3>
+                        <p>복잡한 문제를 논리적으로 분석하고 창의적인 해결책을 제시합니다. 사용자 중심의 사고로 접근합니다.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">🚀</div>
+                        <h3>지속적인 성장</h3>
+                        <p>새로운 기술과 트렌드를 학습하며 끊임없이 발전하고 있습니다. 기술 커뮤니티와 적극적으로 소통합니다.</p>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h3 class="skills-title">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">Frontend</span>
+                            <span class="skill-tech">HTML, CSS, JavaScript, React</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Backend</span>
+                            <span class="skill-tech">Node.js, Python, Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Database</span>
+                            <span class="skill-tech">MySQL, MongoDB, PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">DevOps</span>
+                            <span class="skill-tech">Git, Docker, AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" class="content">
-            <h2>연락처</h2>
-            <p>이메일: your-email@example.com</p>
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">현재 진행 및 서비스 중인 프로젝트</p>
+
+                <div class="projects-grid">
+                    <div class="project-card" data-project="project1">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-status">운영중</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">프로젝트 이름 #1</h3>
+                            <p class="project-description">
+                                프로젝트에 대한 간단한 설명을 작성합니다. 주요 기능과 사용된 기술 스택을 소개합니다.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <a href="project1.html" class="project-link">자세히 보기 →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="project2">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-status">개발중</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">프로젝트 이름 #2</h3>
+                            <p class="project-description">
+                                프로젝트에 대한 간단한 설명을 작성합니다. 목표와 현재 진행 상황을 소개합니다.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Django</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <a href="project2.html" class="project-link">자세히 보기 →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="project3">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-status">계획중</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">프로젝트 이름 #3</h3>
+                            <p class="project-description">
+                                프로젝트에 대한 간단한 설명을 작성합니다. 비전과 예상 기능을 소개합니다.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <a href="project3.html" class="project-link">자세히 보기 →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">프로젝트 문의 및 협업 제안을 환영합니다</p>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="mailto:your-email@example.com">your-email@example.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 내 웹사이트. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p class="footer-subtitle">Made with ❤️ and Code</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

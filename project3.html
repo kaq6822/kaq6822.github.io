@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="프로젝트 #3 상세 정보">
+    <title>프로젝트 #3 - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-detail.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">홈</a></li>
+                <li><a href="index.html#about" class="nav-link">소개</a></li>
+                <li><a href="index.html#projects" class="nav-link">프로젝트</a></li>
+                <li><a href="index.html#contact" class="nav-link">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <div class="project-hero">
+            <div class="container">
+                <a href="index.html#projects" class="back-link">← 프로젝트 목록으로</a>
+                <h1 class="project-detail-title">프로젝트 이름 #3</h1>
+                <p class="project-detail-subtitle">실시간 협업 툴 개발</p>
+                <div class="project-meta">
+                    <span class="meta-item">
+                        <strong>상태:</strong> 계획중
+                    </span>
+                    <span class="meta-item">
+                        <strong>예상 시작:</strong> 2025.03
+                    </span>
+                    <span class="meta-item">
+                        <strong>역할:</strong> Frontend Developer
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <section class="detail-section">
+                <h2>프로젝트 비전</h2>
+                <p>
+                    팀원들이 실시간으로 협업할 수 있는 혁신적인 툴을 개발하는 것이 목표입니다.
+                    Vue.js 기반의 모던한 사용자 인터페이스와 WebSocket을 활용한 실시간 동기화 기능을 제공할 예정입니다.
+                </p>
+            </section>
+
+            <section class="detail-section">
+                <h2>계획된 주요 기능</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">👥</div>
+                        <h3>실시간 협업</h3>
+                        <p>여러 사용자가 동시에 문서를 편집하고 변경사항을 즉시 공유합니다.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💬</div>
+                        <h3>통합 채팅</h3>
+                        <p>작업 중 즉시 소통할 수 있는 실시간 채팅 기능을 제공합니다.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📋</div>
+                        <h3>작업 관리</h3>
+                        <p>프로젝트 진행 상황을 직관적으로 관리하고 추적합니다.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎨</div>
+                        <h3>커스터마이징</h3>
+                        <p>사용자가 워크스페이스를 자유롭게 구성할 수 있습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>예상 기술 스택</h2>
+                <div class="tech-stack">
+                    <div class="tech-category">
+                        <h3>Frontend</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vue.js 3</span>
+                            <span class="tech-tag">Pinia</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Backend</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Infrastructure</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>개발 로드맵</h2>
+                <div class="challenges">
+                    <div class="challenge-item">
+                        <h3>🎯 Phase 1: 기획 및 설계 (2025.03 - 04)</h3>
+                        <p>
+                            요구사항 분석, UI/UX 디자인, 시스템 아키텍처 설계,
+                            기술 스택 확정 및 프로토타입 제작을 진행할 예정입니다.
+                        </p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3>🔨 Phase 2: 핵심 기능 개발 (2025.05 - 07)</h3>
+                        <p>
+                            실시간 동기화 엔진, 사용자 인증 시스템, 기본 문서 편집기,
+                            채팅 시스템을 개발할 계획입니다.
+                        </p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3>🚀 Phase 3: 베타 테스트 및 출시 (2025.08 - 09)</h3>
+                        <p>
+                            베타 테스터 모집, 피드백 수집 및 개선,
+                            성능 최적화 후 정식 서비스를 출시할 예정입니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>기대 효과</h2>
+                <div class="achievements">
+                    <div class="achievement-item">
+                        <div class="achievement-number">50%</div>
+                        <p>협업 효율 향상</p>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-number">1000+</div>
+                        <p>목표 초기 사용자</p>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-number">24/7</div>
+                        <p>실시간 동기화</p>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-number">100%</div>
+                        <p>무료 기본 기능</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p class="footer-subtitle">Made with ❤️ and Code</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
