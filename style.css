@@ -479,6 +479,10 @@ main {
 
 .photo-frame img {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
     border-radius: var(--radius);
     filter: grayscale(30%);
     transition: filter var(--transition);
