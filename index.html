@@ -3,203 +3,430 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="개발자 포트폴리오 - 소개 및 프로젝트">
-    <title>Developer Portfolio</title>
+    <title>강범준 | 백엔드 엔지니어</title>
+    <meta name="description" content="백엔드 엔지니어 강범준의 포트폴리오. Go, Java, Python 기반 서버 개발과 AI 에이전트 인프라, Flutter 사이드 프로젝트를 소개합니다.">
+    <link rel="canonical" href="https://kaq6822.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaq6822.github.io/">
+    <meta property="og:title" content="강범준 | 백엔드 엔지니어">
+    <meta property="og:description" content="Go, Java, Python 기반 서버 개발과 AI 에이전트 인프라를 다루는 백엔드 엔지니어 강범준의 포트폴리오입니다.">
+    <meta property="og:image" content="https://kaq6822.github.io/images/profile.png">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="강범준 포트폴리오">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="강범준 | 백엔드 엔지니어">
+    <meta name="twitter:description" content="Go, Java, Python 기반 서버 개발과 AI 에이전트 인프라를 다루는 백엔드 엔지니어 강범준의 포트폴리오입니다.">
+    <meta name="twitter:image" content="https://kaq6822.github.io/images/profile.png">
+
+    <meta name="theme-color" content="#0a192f">
+    <link rel="icon" href="images/profile.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+
+    <!-- JS 비활성 시: 모바일 드로어 대신 내비게이션 링크를 그대로 노출 -->
+    <noscript>
+        <style>
+            @media (max-width: 768px) {
+                #site-header { height: auto; }
+                .nav-container { flex-wrap: wrap; gap: 12px 20px; padding-top: 16px; padding-bottom: 16px; }
+                .nav-toggle { display: none; }
+                .nav-panel {
+                    position: static;
+                    width: 100%;
+                    padding: 0;
+                    background: transparent;
+                    box-shadow: none;
+                    transform: none;
+                    visibility: visible;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 16px 20px;
+                }
+                .nav-list { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 16px 20px; }
+            }
+        </style>
+    </noscript>
 </head>
 <body>
-    <header>
-        <nav class="nav-container">
-            <div class="logo">
-                <a href="#home">Portfolio</a>
+    <a href="#content" class="skip-link">본문으로 건너뛰기</a>
+
+    <header id="site-header">
+        <nav class="nav-container" aria-label="주 메뉴">
+            <a href="#hero" class="logo" aria-label="홈으로">BJ</a>
+
+            <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav-panel" id="nav-menu">
+                <ol class="nav-list">
+                    <li><a href="#about" class="nav-link">소개</a></li>
+                    <li><a href="#skills" class="nav-link">기술</a></li>
+                    <li><a href="#projects" class="nav-link">프로젝트</a></li>
+                    <li><a href="#contact" class="nav-link">연락처</a></li>
+                </ol>
+                <a href="https://github.com/kaq6822" class="btn nav-cta" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">홈</a></li>
-                <li><a href="#about" class="nav-link">소개</a></li>
-                <li><a href="#projects" class="nav-link">프로젝트</a></li>
-                <li><a href="#contact" class="nav-link">연락처</a></li>
-            </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">안녕하세요 👋</h1>
-                    <h2 class="hero-subtitle">개발자 [Your Name]입니다</h2>
-                    <p class="hero-description">
-                        열정적으로 새로운 기술을 배우고<br>
-                        의미있는 서비스를 만들어가는 개발자입니다.
+    <!-- 좌측 소셜 사이드바 -->
+    <aside class="side side-left" aria-label="소셜 링크">
+        <ul class="social-list">
+            <li>
+                <a href="https://github.com/kaq6822" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://bjkang.notion.site/Beomjun-Kang-0fa6e02c460b48df8ff7f209c123e0f5" target="_blank" rel="noopener noreferrer" aria-label="블로그">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:kaq6822@naver.com" aria-label="이메일">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- 우측 이메일 사이드바 -->
+    <aside class="side side-right" aria-label="이메일">
+        <a href="mailto:kaq6822@naver.com" class="side-email">kaq6822@naver.com</a>
+    </aside>
+
+    <main id="content">
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <p class="hero-greeting">안녕하세요, 저는</p>
+            <h1 class="hero-title">강범준입니다.</h1>
+            <h2 class="hero-subtitle">신뢰할 수 있는 백엔드를 만듭니다.</h2>
+            <p class="hero-description">
+                Selvas-AI에서 일하는 백엔드 엔지니어입니다.
+                Go · Java · Python으로 서버를 만들고,
+                최근에는 AI 에이전트를 위한 인프라와 MCP(Model Context Protocol) 생태계에
+                깊은 관심을 두고 있습니다.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                <a href="mailto:kaq6822@naver.com" class="btn">연락하기</a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section about-section">
+            <h2 class="section-heading"><span class="section-number">01.</span>소개</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        서버가 <strong>왜 그렇게 동작하는지</strong>를 끝까지 파고드는 것을 좋아하는
+                        백엔드 엔지니어입니다. REST API 서버 설계부터 데이터 모델링, 배포까지
+                        서비스의 뼈대를 만드는 일을 해왔습니다.
                     </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
-                        <a href="#contact" class="btn btn-secondary">연락하기</a>
-                    </div>
+                    <p>
+                        요즘은 AI 에이전트가 실제 업무를 안전하게 수행할 수 있게 하는
+                        <strong>에이전트 인프라</strong>에 몰두하고 있습니다. 권한 통제와 감사 로그를 갖춘
+                        MCP 서버를 직접 설계·구현하며, LLM을 온디바이스에서 구동하는 실험도 병행합니다.
+                    </p>
+                    <p>
+                        백엔드가 본업이지만 Flutter로 웹과 앱을 만들어 아이디어를 끝까지
+                        제품으로 완성해 보는 사이드 프로젝트도 꾸준히 하고 있습니다.
+                    </p>
+                    <p>최근에 주로 다루는 기술들입니다.</p>
+                    <ul class="about-tech-list">
+                        <li>Go</li>
+                        <li>Java</li>
+                        <li>Python (FastAPI)</li>
+                        <li>TypeScript</li>
+                        <li>Flutter / Dart</li>
+                        <li>MCP · LLM 인프라</li>
+                    </ul>
                 </div>
-                <div class="hero-image">
-                    <div class="floating-card">
-                        <div class="code-snippet">
-                            <span class="code-line">const developer = {</span>
-                            <span class="code-line">  name: "Your Name",</span>
-                            <span class="code-line">  passion: "coding",</span>
-                            <span class="code-line">  goal: "innovation"</span>
-                            <span class="code-line">};</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-card">
-                        <div class="about-icon">💻</div>
-                        <h3>개발 경험</h3>
-                        <p>웹 개발 및 다양한 프로젝트 경험을 보유하고 있습니다. 최신 기술 스택을 활용하여 효율적인 솔루션을 제공합니다.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-icon">🎯</div>
-                        <h3>문제 해결</h3>
-                        <p>복잡한 문제를 논리적으로 분석하고 창의적인 해결책을 제시합니다. 사용자 중심의 사고로 접근합니다.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-icon">🚀</div>
-                        <h3>지속적인 성장</h3>
-                        <p>새로운 기술과 트렌드를 학습하며 끊임없이 발전하고 있습니다. 기술 커뮤니티와 적극적으로 소통합니다.</p>
-                    </div>
-                </div>
-
-                <div class="skills-section">
-                    <h3 class="skills-title">Technical Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <span class="skill-name">Frontend</span>
-                            <span class="skill-tech">HTML, CSS, JavaScript, React</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Backend</span>
-                            <span class="skill-tech">Node.js, Python, Java</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Database</span>
-                            <span class="skill-tech">MySQL, MongoDB, PostgreSQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">DevOps</span>
-                            <span class="skill-tech">Git, Docker, AWS</span>
-                        </div>
+                <div class="about-photo">
+                    <div class="photo-frame">
+                        <img src="images/profile.png" alt="강범준 프로필 사진" width="300" height="300">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <p class="section-subtitle">현재 진행 및 서비스 중인 프로젝트</p>
-
-                <div class="projects-grid">
-                    <div class="project-card" data-project="project1">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <span class="project-status">운영중</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">프로젝트 이름 #1</h3>
-                            <p class="project-description">
-                                프로젝트에 대한 간단한 설명을 작성합니다. 주요 기능과 사용된 기술 스택을 소개합니다.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">MongoDB</span>
-                            </div>
-                            <a href="project1.html" class="project-link">자세히 보기 →</a>
-                        </div>
+        <!-- Skills -->
+        <section id="skills" class="section skills-section">
+            <h2 class="section-heading"><span class="section-number">02.</span>기술 스택</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
                     </div>
-
-                    <div class="project-card" data-project="project2">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <span class="project-status">개발중</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">프로젝트 이름 #2</h3>
-                            <p class="project-description">
-                                프로젝트에 대한 간단한 설명을 작성합니다. 목표와 현재 진행 상황을 소개합니다.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Django</span>
-                                <span class="tag">PostgreSQL</span>
-                            </div>
-                            <a href="project2.html" class="project-link">자세히 보기 →</a>
-                        </div>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Go</li>
+                        <li>Java</li>
+                        <li>Python · FastAPI</li>
+                        <li>REST API · SSE</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
                     </div>
-
-                    <div class="project-card" data-project="project3">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <span class="project-status">계획중</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">프로젝트 이름 #3</h3>
-                            <p class="project-description">
-                                프로젝트에 대한 간단한 설명을 작성합니다. 비전과 예상 기능을 소개합니다.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">Vue.js</span>
-                                <span class="tag">Express</span>
-                                <span class="tag">MySQL</span>
-                            </div>
-                            <a href="project3.html" class="project-link">자세히 보기 →</a>
-                        </div>
+                    <h3>Frontend &amp; Mobile</h3>
+                    <ul>
+                        <li>Flutter · Dart</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>BLoC · Riverpod</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"></path><line x1="9" y1="22" x2="15" y2="22"></line></svg>
                     </div>
+                    <h3>AI &amp; Agent</h3>
+                    <ul>
+                        <li>MCP 서버 설계</li>
+                        <li>On-device LLM (Gemma)</li>
+                        <li>에이전트 권한 통제</li>
+                        <li>스트리밍 추론 UI</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3>Tools &amp; Infra</h3>
+                    <ul>
+                        <li>Git · GitHub</li>
+                        <li>Docker</li>
+                        <li>SQLite · RDB</li>
+                        <li>Unity · C#</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <p class="section-subtitle">프로젝트 문의 및 협업 제안을 환영합니다</p>
+        <!-- Projects -->
+        <section id="projects" class="section projects-section">
+            <h2 class="section-heading"><span class="section-number">03.</span>프로젝트</h2>
 
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <div class="contact-icon">📧</div>
-                        <h3>Email</h3>
-                        <a href="mailto:your-email@example.com">your-email@example.com</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">💼</div>
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">📱</div>
-                        <h3>LinkedIn</h3>
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+            <!-- Featured: TaskFlow MCP Server -->
+            <article class="featured-project">
+                <div class="featured-media" aria-hidden="true">
+                    <div class="media-panel media-taskflow">
+                        <pre class="media-code"><code>$ taskflow run deploy-job
+<span class="c-accent">✓</span> scope: jobs:execute
+<span class="c-accent">✓</span> argv allowlist passed
+<span class="c-accent">✓</span> audit #a3f2 chained
+<span class="c-dim">agent(claude) → job started</span></code></pre>
                     </div>
                 </div>
+                <div class="featured-content">
+                    <p class="featured-label">대표 프로젝트</p>
+                    <h3 class="featured-title"><a href="https://github.com/kaq6822/taskflow-mcp-server" target="_blank" rel="noopener noreferrer">TaskFlow MCP Server</a></h3>
+                    <div class="featured-description">
+                        <p>
+                            AI 에이전트가 1차 사용자인 워크플로 오케스트레이션 플랫폼.
+                            Scope 기반 권한, argv allowlist, hash-chained 감사 로그로 에이전트의
+                            Job 실행을 통제하고, MCP 엔드포인트를 통해 Claude 같은 에이전트가
+                            안전하게 작업을 실행할 수 있게 합니다.
+                        </p>
+                    </div>
+                    <ul class="featured-tech">
+                        <li>Python · FastAPI</li>
+                        <li>MCP (Streamable HTTP)</li>
+                        <li>React · Vite</li>
+                        <li>SQLite</li>
+                    </ul>
+                    <div class="featured-links">
+                        <a href="https://github.com/kaq6822/taskflow-mcp-server" target="_blank" rel="noopener noreferrer" aria-label="TaskFlow MCP Server GitHub 저장소">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Featured: Gemma Chat -->
+            <article class="featured-project featured-reverse">
+                <div class="featured-media" aria-hidden="true">
+                    <div class="media-panel media-gemma">
+                        <div class="media-chat">
+                            <p class="chat-bubble chat-user">이 사진 속 음식이 뭐야? 📎</p>
+                            <p class="chat-bubble chat-ai"><span class="c-accent">Gemma3n</span>이 이미지를 분석 중…<span class="cursor">▊</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-content">
+                    <p class="featured-label">대표 프로젝트</p>
+                    <h3 class="featured-title"><a href="https://github.com/kaq6822/gemma_toy_project" target="_blank" rel="noopener noreferrer">Gemma Chat</a></h3>
+                    <div class="featured-description">
+                        <p>
+                            Google Gemma 모델을 서버 없이 <strong>온디바이스</strong>로 실행하는 Flutter AI
+                            채팅 앱. 실시간 스트리밍 대화, 이미지 첨부 멀티모달 질의(Gemma3n),
+                            대화 세션 관리와 모델 교체를 지원합니다.
+                        </p>
+                    </div>
+                    <ul class="featured-tech">
+                        <li>Flutter · Dart</li>
+                        <li>flutter_gemma</li>
+                        <li>Riverpod</li>
+                        <li>Drift</li>
+                    </ul>
+                    <div class="featured-links">
+                        <a href="https://github.com/kaq6822/gemma_toy_project" target="_blank" rel="noopener noreferrer" aria-label="Gemma Chat GitHub 저장소">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Featured: Flutter + Go 풀스택 -->
+            <article class="featured-project">
+                <div class="featured-media" aria-hidden="true">
+                    <div class="media-panel media-fullstack">
+                        <pre class="media-code"><code><span class="c-dim">// flutter_bloc_web ⇄ go-rest-api-server</span>
+GET /api/v1/items
+<span class="c-accent">200 OK</span> · 12ms
+<span class="c-dim">BlocBuilder&lt;ItemBloc&gt; rebuild…</span></code></pre>
+                    </div>
+                </div>
+                <div class="featured-content">
+                    <p class="featured-label">대표 프로젝트</p>
+                    <h3 class="featured-title"><a href="https://github.com/kaq6822/flutter_bloc_web" target="_blank" rel="noopener noreferrer">Flutter × Go 풀스택 웹</a></h3>
+                    <div class="featured-description">
+                        <p>
+                            BLoC 패턴을 적용한 Flutter 웹 프론트엔드와 Go로 작성한 REST API
+                            서버를 페어로 구성한 풀스택 프로젝트. 프론트와 백엔드를 각각의
+                            저장소로 분리해 API 계약을 중심으로 설계했습니다.
+                        </p>
+                    </div>
+                    <ul class="featured-tech">
+                        <li>Flutter Web</li>
+                        <li>BLoC</li>
+                        <li>Go</li>
+                        <li>REST API</li>
+                    </ul>
+                    <div class="featured-links">
+                        <a href="https://github.com/kaq6822/flutter_bloc_web" target="_blank" rel="noopener noreferrer" aria-label="flutter_bloc_web GitHub 저장소">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://github.com/kaq6822/go-rest-api-server" target="_blank" rel="noopener noreferrer" aria-label="go-rest-api-server GitHub 저장소" class="link-labeled">API 서버 ↗</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 다른 프로젝트 -->
+            <h3 class="other-heading">다른 프로젝트</h3>
+            <div class="other-grid">
+                <article class="other-card">
+                    <div class="other-top">
+                        <span class="folder-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </span>
+                        <a href="https://github.com/kaq6822/go-rest-api-server" target="_blank" rel="noopener noreferrer" aria-label="go-rest-api-server GitHub 저장소" class="other-ext">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                    <h4 class="other-title"><a href="https://github.com/kaq6822/go-rest-api-server" target="_blank" rel="noopener noreferrer">go-rest-api-server</a></h4>
+                    <p class="other-description">Flutter 웹 프로젝트의 백엔드로 사용하는 Go 기반 RESTful API 서버.</p>
+                    <ul class="other-tech"><li>Go</li><li>REST</li></ul>
+                </article>
+
+                <article class="other-card">
+                    <div class="other-top">
+                        <span class="folder-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </span>
+                        <a href="https://github.com/kaq6822/PirateRoulette" target="_blank" rel="noopener noreferrer" aria-label="PirateRoulette GitHub 저장소" class="other-ext">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                    <h4 class="other-title"><a href="https://github.com/kaq6822/PirateRoulette" target="_blank" rel="noopener noreferrer">PirateRoulette</a></h4>
+                    <p class="other-description">Unity로 만든 해적 룰렛 미니 게임 프로젝트.</p>
+                    <ul class="other-tech"><li>Unity</li><li>C#</li></ul>
+                </article>
+
+                <article class="other-card">
+                    <div class="other-top">
+                        <span class="folder-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </span>
+                        <a href="https://github.com/kaq6822/http-macro" target="_blank" rel="noopener noreferrer" aria-label="http-macro GitHub 저장소" class="other-ext">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                    <h4 class="other-title"><a href="https://github.com/kaq6822/http-macro" target="_blank" rel="noopener noreferrer">http-macro</a></h4>
+                    <p class="other-description">반복적인 HTTP 요청을 자동화하는 Python 매크로 도구.</p>
+                    <ul class="other-tech"><li>Python</li></ul>
+                </article>
+
+                <article class="other-card">
+                    <div class="other-top">
+                        <span class="folder-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </span>
+                        <a href="https://github.com/kaq6822/hansei-api-server" target="_blank" rel="noopener noreferrer" aria-label="hansei-api-server GitHub 저장소" class="other-ext">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                    <h4 class="other-title"><a href="https://github.com/kaq6822/hansei-api-server" target="_blank" rel="noopener noreferrer">hansei-api-server</a></h4>
+                    <p class="other-description">웹 프로그래밍 수업용 백엔드 API 서버. Java 기반으로 구현.</p>
+                    <ul class="other-tech"><li>Java</li><li>API</li></ul>
+                </article>
+
+                <article class="other-card">
+                    <div class="other-top">
+                        <span class="folder-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </span>
+                        <a href="https://github.com/kaq6822/closetimo" target="_blank" rel="noopener noreferrer" aria-label="closetimo GitHub 저장소" class="other-ext">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                    <h4 class="other-title"><a href="https://github.com/kaq6822/closetimo" target="_blank" rel="noopener noreferrer">closetimo</a></h4>
+                    <p class="other-description">Flutter로 개발 중인 모바일 앱 사이드 프로젝트.</p>
+                    <ul class="other-tech"><li>Flutter</li><li>Dart</li></ul>
+                </article>
+
+                <article class="other-card">
+                    <div class="other-top">
+                        <span class="folder-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </span>
+                        <a href="https://github.com/kaq6822/slotmatch" target="_blank" rel="noopener noreferrer" aria-label="slotmatch GitHub 저장소" class="other-ext">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                    <h4 class="other-title"><a href="https://github.com/kaq6822/slotmatch" target="_blank" rel="noopener noreferrer">slotmatch</a></h4>
+                    <p class="other-description">JavaScript로 만든 슬롯 매칭 웹 프로젝트.</p>
+                    <ul class="other-tech"><li>JavaScript</li></ul>
+                </article>
             </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact-section">
+            <p class="contact-label"><span class="section-number">04.</span>연락처</p>
+            <h2 class="contact-title">함께 일해요</h2>
+            <p class="contact-description">
+                새로운 기회와 협업 제안을 언제나 환영합니다.
+                프로젝트 문의든 가벼운 인사든 편하게 메일 주세요.
+                확인하는 대로 답장드리겠습니다.
+            </p>
+            <a href="mailto:kaq6822@naver.com" class="btn btn-primary btn-lg">메일 보내기</a>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-            <p class="footer-subtitle">Made with ❤️ and Code</p>
-        </div>
+        <ul class="footer-social" aria-label="소셜 링크">
+            <li><a href="https://github.com/kaq6822" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://bjkang.notion.site/Beomjun-Kang-0fa6e02c460b48df8ff7f209c123e0f5" target="_blank" rel="noopener noreferrer">블로그</a></li>
+            <li><a href="mailto:kaq6822@naver.com">이메일</a></li>
+        </ul>
+        <p class="footer-credit">강범준이 디자인하고 직접 제작 · © <span id="year">2026</span></p>
     </footer>
 
     <script src="script.js"></script>
