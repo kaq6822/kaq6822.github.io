@@ -75,7 +75,8 @@ spySections.forEach(section => spyObserver.observe(section));
 // ---------- 스크롤 등장 애니메이션 ----------
 // JS로 .reveal을 부여하므로 JS 비활성 환경에서는 모든 콘텐츠가 그대로 보인다.
 const revealTargets = document.querySelectorAll(
-    '.section-heading, .about-grid, .skill-card, .featured-project, .other-card, ' +
+    '.section-heading, .section-lead, .about-grid, .skill-card, ' +
+    '.timeline-item, .teaching-card, .other-card, ' +
     '.contact-label, .contact-title, .contact-description, .contact-section .btn'
 );
 
