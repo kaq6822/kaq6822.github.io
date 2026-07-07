@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기술 블로그 | 강범준</title>
+    <meta name="description" content="백엔드 엔지니어 강범준이 설계 판단과 트레이드오프, 디버깅 과정과 운영 경험을 기록하는 기술 블로그입니다.">
+    <link rel="canonical" href="https://kaq6822.github.io/blog/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaq6822.github.io/blog/">
+    <meta property="og:title" content="기술 블로그 | 강범준">
+    <meta property="og:description" content="백엔드 엔지니어 강범준이 설계 판단과 트레이드오프, 디버깅 과정과 운영 경험을 기록하는 기술 블로그입니다.">
+    <meta property="og:image" content="https://kaq6822.github.io/images/profile.png">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="강범준 포트폴리오">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="기술 블로그 | 강범준">
+    <meta name="twitter:description" content="백엔드 엔지니어 강범준이 설계 판단과 트레이드오프, 디버깅 과정과 운영 경험을 기록하는 기술 블로그입니다.">
+    <meta name="twitter:image" content="https://kaq6822.github.io/images/profile.png">
+
+    <meta name="theme-color" content="#0a192f">
+    <link rel="icon" href="../images/profile.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- JS 비활성 시: 모바일 드로어 대신 내비게이션 링크를 그대로 노출 -->
+    <noscript>
+        <style>
+            @media (max-width: 768px) {
+                #site-header { height: auto; }
+                .nav-container { flex-wrap: wrap; gap: 12px 20px; padding-top: 16px; padding-bottom: 16px; }
+                .nav-toggle { display: none; }
+                .nav-panel {
+                    position: static;
+                    width: 100%;
+                    padding: 0;
+                    background: transparent;
+                    box-shadow: none;
+                    transform: none;
+                    visibility: visible;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 16px 20px;
+                }
+                .nav-list { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 16px 20px; }
+            }
+        </style>
+    </noscript>
+</head>
+<body>
+    <a href="#content" class="skip-link">본문으로 건너뛰기</a>
+
+    <header id="site-header">
+        <nav class="nav-container" aria-label="주 메뉴">
+            <a href="../index.html" class="logo" aria-label="홈으로">BJ</a>
+
+            <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav-panel" id="nav-menu">
+                <ol class="nav-list">
+                    <li><a href="../index.html#about" class="nav-link">소개</a></li>
+                    <li><a href="../index.html#skills" class="nav-link">기술</a></li>
+                    <li><a href="../index.html#experience" class="nav-link">경력</a></li>
+                    <li><a href="../index.html#projects" class="nav-link">프로젝트</a></li>
+                    <li><a href="index.html" class="nav-link" aria-current="page">블로그</a></li>
+                    <li><a href="../index.html#contact" class="nav-link">연락처</a></li>
+                </ol>
+                <a href="https://github.com/kaq6822" class="btn nav-cta" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section class="section blog-section">
+            <h1 class="blog-heading">기술 블로그</h1>
+            <p class="blog-intro">
+                설계 과정에서의 판단과 트레이드오프, 그리고 디버깅과 운영 경험을 기록합니다.
+            </p>
+
+            <ol class="blog-list" reversed>
+                <!-- 새 글 발행 시 _templates/blog-list-item.html 스니펫을 이 목록 최상단에 추가 (절차: AGENTS.md '기술 블로그' 섹션) -->
+            </ol>
+
+            <!-- 첫 글이 발행되면 아래 blog-empty 요소를 제거하세요 -->
+            <p class="blog-empty">첫 글을 준비하고 있습니다.</p>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="footer-social" aria-label="소셜 링크">
+            <li><a href="https://github.com/kaq6822" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/beomjun6551" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="mailto:kaq6822@naver.com">이메일</a></li>
+        </ul>
+        <p class="footer-credit">강범준이 디자인하고 직접 제작 · © <span id="year">2026</span></p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

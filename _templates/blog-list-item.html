@@ -1,0 +1,20 @@
+<!--
+    이 파일은 발행용이 아닌 스니펫 템플릿입니다. 완전한 HTML 문서가 아니라
+    blog/index.html의 <ol class="blog-list"> 내부 최상단(가장 최신 글 위치)에
+    붙여넣을 <li> 조각입니다. 붙여넣은 뒤 {{...}} 토큰을 전부 치환하세요.
+    발행 절차는 AGENTS.md '기술 블로그' 섹션 참조.
+
+    치환 대상 토큰:
+      {{SLUG}}             - blog/posts/<slug>.html의 slug
+      {{PUBLISHED_DATE}}   - 발행일, YYYY-MM-DD 형식
+      {{LABEL}}            - 글 분류 라벨. 예: "디버깅" | "아키텍처 결정" | "운영"
+      {{TITLE}}            - 글 제목
+      {{DESCRIPTION}}      - 요약
+-->
+<li class="blog-item">
+    <a href="posts/{{SLUG}}.html">
+        <p class="blog-item-meta"><time class="blog-item-date" datetime="{{PUBLISHED_DATE}}">{{PUBLISHED_DATE}}</time> · <span class="blog-item-label">{{LABEL}}</span></p>
+        <h2 class="blog-item-title">{{TITLE}}</h2>
+        <p class="blog-item-description">{{DESCRIPTION}}</p>
+    </a>
+</li>
