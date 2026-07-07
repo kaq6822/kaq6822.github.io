@@ -1,0 +1,12 @@
+# GitHub Pages(Jekyll) 빌드 설정
+# 이 저장소는 순수 정적 사이트이지만, GitHub Pages는 Jekyll을 거쳐 배포하며
+# _로 시작하는 디렉터리(_templates 등)를 결과물에서 제외한다. 이 동작에 의존하므로
+# .nojekyll 파일을 추가하지 않는다(추가 시 _templates가 그대로 공개됨).
+
+# 저장소 문서는 사이트로 공개할 필요가 없고, 본문의 {{...}} 예시가 Liquid 파싱
+# 오류를 일으키므로 빌드에서 제외한다. (발행 대상 파일에는 리터럴 {{ 를 두지 않는다.)
+exclude:
+  - AGENTS.md
+  - CLAUDE.md
+  - README.md
+  - TODO.md

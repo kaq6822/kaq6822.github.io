@@ -68,6 +68,8 @@ robots.txt          # 크롤링 규칙 (_templates/ 차단)
 - GitHub Pages는 `.nojekyll` 파일이 없으면 Jekyll 기본 빌드를 거치며, 이때 `_`로 시작하는 파일·디렉터리는 배포에서 제외됩니다. `_templates/`가 공개되지 않는 것은 이 동작에 의존하므로 **`.nojekyll` 파일을 절대 추가하지 않습니다.**
 - 이중 방어로 `robots.txt`가 `/_templates/`를 차단합니다. 이 규칙을 삭제하지 않습니다.
 - 템플릿의 `{{TOKEN}}` 플레이스홀더는 실제처럼 보이는 값으로 채워두지 않습니다. 템플릿은 사이트 어느 페이지에서도 링크하지 않습니다.
+- **Liquid 파싱 주의:** Jekyll은 배포 대상인 `.md`/`.html`을 Liquid로 렌더링하며, 리터럴 `{{`는 변수 태그로 해석되어 빌드를 깨뜨릴 수 있습니다. 따라서 (1) 발행 대상 파일(`blog/**`, `index.html` 등) 본문에는 `{{`를 두지 않고, (2) `{{TOKEN}}` 예시를 담은 저장소 문서(AGENTS.md 등)는 `_config.yml`의 `exclude`로 빌드에서 제외합니다. `_templates/`의 토큰은 언더스코어 규칙으로 애초에 빌드되지 않으므로 안전합니다.
+- 저장소 문서를 새로 추가할 때 본문에 `{{`가 들어간다면 `_config.yml`의 `exclude` 목록에 파일명을 추가합니다.
 
 ### 새 글 발행 절차
 1. `_templates/blog-post.html`을 `blog/posts/<slug>.html`로 복사합니다.
