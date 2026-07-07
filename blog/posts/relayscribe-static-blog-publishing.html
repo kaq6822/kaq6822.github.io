@@ -26,51 +26,16 @@
     <meta name="theme-color" content="#0a192f">
     <link rel="icon" href="../../images/profile.png" type="image/png">
     <link rel="stylesheet" href="../../style.css">
-
-    <!-- JS 비활성 시: 모바일 드로어 대신 내비게이션 링크를 그대로 노출 -->
-    <noscript>
-        <style>
-            @media (max-width: 768px) {
-                #site-header { height: auto; }
-                .nav-container { flex-wrap: wrap; gap: 12px 20px; padding-top: 16px; padding-bottom: 16px; }
-                .nav-toggle { display: none; }
-                .nav-panel {
-                    position: static;
-                    width: 100%;
-                    padding: 0;
-                    background: transparent;
-                    box-shadow: none;
-                    transform: none;
-                    visibility: visible;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    gap: 16px 20px;
-                }
-                .nav-list { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 16px 20px; }
-            }
-        </style>
-    </noscript>
 </head>
 <body>
     <a href="#content" class="skip-link">본문으로 건너뛰기</a>
 
-    <header id="site-header">
+    <header id="site-header" class="site-header--minimal">
         <nav class="nav-container" aria-label="주 메뉴">
             <a href="../../index.html#hero" class="logo" aria-label="홈으로">BJ</a>
 
-            <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-menu">
-                <span class="hamburger"></span>
-            </button>
-
-            <div class="nav-panel" id="nav-menu">
-                <ol class="nav-list">
-                    <li><a href="../../index.html#about" class="nav-link">소개</a></li>
-                    <li><a href="../../index.html#skills" class="nav-link">기술</a></li>
-                    <li><a href="../../index.html#experience" class="nav-link">경력</a></li>
-                    <li><a href="../../index.html#projects" class="nav-link">프로젝트</a></li>
-                    <li><a href="../index.html" class="nav-link">블로그</a></li>
-                    <li><a href="../../index.html#contact" class="nav-link">연락처</a></li>
-                </ol>
+            <div class="nav-actions">
+                <a href="../index.html" class="btn nav-cta">블로그</a>
                 <a href="https://github.com/kaq6822" class="btn nav-cta" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </nav>

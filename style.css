@@ -215,6 +215,23 @@ ul, ol {
     padding: 10px 18px;
 }
 
+/* 섹션 목차 없이 버튼만 두는 헤더(블로그 등): 모바일에서도 드로어 없이 버튼 인라인 노출 */
+.site-header--minimal .nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .site-header--minimal .nav-panel {
+        position: static;
+        width: auto;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+        transform: none;
+        visibility: visible;
+    }
+}
+
 /* 햄버거 (모바일) */
 .nav-toggle {
     display: none;
