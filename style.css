@@ -204,6 +204,13 @@ ul, ol {
     color: var(--accent);
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
 .nav-cta {
     padding: 10px 18px;
 }
