@@ -76,7 +76,7 @@ spySections.forEach(section => spyObserver.observe(section));
 // JS로 .reveal을 부여하므로 JS 비활성 환경에서는 모든 콘텐츠가 그대로 보인다.
 const revealTargets = document.querySelectorAll(
     '.section-heading, .section-lead, .about-grid, .skill-card, ' +
-    '.timeline-item, .teaching-card, .other-card, ' +
+    '.timeline-item, .practice, .teaching-card, .other-card, ' +
     '.contact-label, .contact-title, .contact-description, .contact-section .btn'
 );
 

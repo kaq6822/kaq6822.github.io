@@ -681,6 +681,23 @@ main {
     color: var(--text-muted);
 }
 
+/* 현장(문제) → 해결 구조 */
+.timeline-projects > li > p + p {
+    margin-top: 8px;
+}
+
+.timeline-projects > li > .project-problem {
+    color: var(--text);
+}
+
+.project-label {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
 .tag-row {
     display: flex;
     flex-wrap: wrap;
@@ -691,11 +708,13 @@ main {
     color: var(--accent);
 }
 
-/* ---------- 교육 / 강의 ---------- */
+/* ---------- 일하는 방식 / 교육 · 강의 ---------- */
+.practice,
 .teaching {
     margin-top: 64px;
 }
 
+.practice-heading,
 .teaching-heading {
     margin-bottom: 24px;
     font-size: 22px;
