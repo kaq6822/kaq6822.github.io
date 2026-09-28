@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>강범준 | 백엔드 엔지니어</title>
-    <meta name="description" content="현장의 불편을 소프트웨어로 푸는 10년차 백엔드 엔지니어 강범준의 포트폴리오. 의료기기 실시간 모니터링, 원격진료, 음성합성 서비스 등 Java/Spring·Go 기반 서버를 설계·개발합니다.">
+    <meta name="description" content="현장의 불편을 소프트웨어로 푸는 11년차 백엔드 엔지니어 강범준의 포트폴리오. 병동 환자 실시간 모니터링, 오지 응급 원격진료, 성우 없이 만드는 오디오북처럼 현장의 문제를 소프트웨어로 풀어 왔습니다.">
     <link rel="canonical" href="https://kaq6822.github.io/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kaq6822.github.io/">
     <meta property="og:title" content="강범준 | 백엔드 엔지니어">
-    <meta property="og:description" content="현장의 불편을 소프트웨어로 푸는 10년차 백엔드 엔지니어. 의료기기 실시간 모니터링, 원격진료, 음성합성 서비스 등을 설계·개발합니다.">
+    <meta property="og:description" content="현장의 불편을 소프트웨어로 푸는 11년차 백엔드 엔지니어. 의료기기 실시간 모니터링, 원격진료, 음성합성 서비스 등을 설계·개발합니다.">
     <meta property="og:image" content="https://kaq6822.github.io/images/profile.png">
     <meta property="og:locale" content="ko_KR">
     <meta property="og:site_name" content="강범준 포트폴리오">
@@ -19,368 +19,253 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="강범준 | 백엔드 엔지니어">
-    <meta name="twitter:description" content="현장의 불편을 소프트웨어로 푸는 10년차 백엔드 엔지니어. 의료기기 실시간 모니터링, 원격진료, 음성합성 서비스 등을 설계·개발합니다.">
+    <meta name="twitter:description" content="현장의 불편을 소프트웨어로 푸는 11년차 백엔드 엔지니어. 의료기기 실시간 모니터링, 원격진료, 음성합성 서비스 등을 설계·개발합니다.">
     <meta name="twitter:image" content="https://kaq6822.github.io/images/profile.png">
 
-    <meta name="theme-color" content="#0a192f">
+    <meta name="theme-color" content="#f7f6f2">
     <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="images/icons/favicon-monogram.png" sizes="512x512" type="image/png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <!-- JS 비활성 시: 모바일 드로어 대신 내비게이션 링크를 그대로 노출 -->
-    <noscript>
-        <style>
-            @media (max-width: 768px) {
-                #site-header { height: auto; }
-                .nav-container { flex-wrap: wrap; gap: 12px 20px; padding-top: 16px; padding-bottom: 16px; }
-                .nav-toggle { display: none; }
-                .nav-panel {
-                    position: static;
-                    width: 100%;
-                    padding: 0;
-                    background: transparent;
-                    box-shadow: none;
-                    transform: none;
-                    visibility: visible;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    gap: 16px 20px;
-                }
-                .nav-list { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 16px 20px; }
-            }
-        </style>
-    </noscript>
 </head>
 <body>
     <a href="#content" class="skip-link">본문으로 건너뛰기</a>
 
     <header id="site-header">
         <nav class="nav-container" aria-label="주 메뉴">
-            <a href="#hero" class="logo" aria-label="홈으로">BJ</a>
+            <a href="#hero" class="logo" aria-label="홈으로">강범준<span>백엔드 엔지니어</span></a>
 
-            <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-menu">
-                <span class="hamburger"></span>
-            </button>
-
-            <div class="nav-panel" id="nav-menu">
-                <ol class="nav-list">
-                    <li><a href="#about" class="nav-link">소개</a></li>
-                    <li><a href="#skills" class="nav-link">기술</a></li>
-                    <li><a href="#experience" class="nav-link">경력</a></li>
-                    <li><a href="#projects" class="nav-link">프로젝트</a></li>
-                    <li><a href="#contact" class="nav-link">연락처</a></li>
-                </ol>
-                <div class="nav-actions">
-                    <a href="blog/index.html" class="btn nav-cta">블로그</a>
-                    <a href="https://github.com/kaq6822" class="btn nav-cta" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
+            <div class="nav-actions">
+                <a href="blog/index.html" class="nav-link">블로그</a>
             </div>
         </nav>
     </header>
 
-    <!-- 좌측 소셜 사이드바 -->
-    <aside class="side side-left" aria-label="소셜 링크">
-        <ul class="social-list">
-            <li>
-                <a href="https://github.com/kaq6822" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/beomjun6551" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5A6 6 0 0 1 16 8z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:kaq6822@naver.com" aria-label="이메일">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </a>
-            </li>
-        </ul>
-    </aside>
-
-    <!-- 우측 이메일 사이드바 -->
-    <aside class="side side-right" aria-label="이메일">
-        <a href="mailto:kaq6822@naver.com" class="side-email">kaq6822@naver.com</a>
-    </aside>
-
     <main id="content">
         <!-- Hero -->
         <section id="hero" class="hero">
-            <p class="hero-greeting">안녕하세요, 저는</p>
-            <h1 class="hero-title">강범준입니다.</h1>
-            <h2 class="hero-subtitle">현장의 불편을 소프트웨어로 푸는 백엔드 엔지니어.</h2>
-            <p class="hero-description">
-                기술보다 그 기술로 풀어야 할 현장의 문제를 먼저 봅니다.
-                병동 환자 실시간 모니터링, 오지 응급 환자를 위한 원격진료, 성우 없이 만드는 오디오북까지
-                오프라인에서 사람이 겪는 어려움을 소프트웨어로 덜어내는 일을 약 10년간 해 왔습니다.
-                주력은 Java/Spring·Go입니다.
-            </p>
-            <div class="hero-buttons">
-                <a href="#experience" class="btn btn-primary">경력 보기</a>
-                <a href="mailto:kaq6822@naver.com" class="btn">연락하기</a>
+            <div class="wrap hero-grid">
+                <div class="hero-text">
+                    <h1 class="hero-name">강범준</h1>
+                    <p class="hero-tagline">현장의 불편을 소프트웨어로 푸는 <span class="nowrap">11년차 백엔드 엔지니어</span></p>
+                    <p class="hero-lead">
+                        기술보다 그 기술로 풀어야 할 현장의 문제를 먼저 봅니다.
+                        병동 환자 실시간 모니터링, 오지 응급 환자를 위한 원격진료, 성우 없이 만드는 오디오북까지
+                        오프라인에서 사람이 겪는 어려움을 소프트웨어로 덜어내는 일을 10년 넘게 해 왔습니다.
+                        도구와 언어는 문제에 맞춰 고르고, 요즘은 AI Agent와 함께 더 빠르게 풀어 갑니다.
+                    </p>
+                    <div class="icon-links">
+                        <a href="https://www.linkedin.com/in/beomjun6551" class="icon-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn 프로필" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="https://github.com/kaq6822" class="icon-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub 프로필" title="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+                        <a href="mailto:kaq6822@naver.com" class="icon-btn" aria-label="메일 보내기" title="메일 보내기"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg></a>
+                    </div>
+                </div>
+                <figure class="portrait">
+                    <img src="images/profile.png" alt="강범준 프로필 사진" width="460" height="460">
+                </figure>
             </div>
         </section>
 
-        <!-- About -->
-        <section id="about" class="section about-section">
-            <h2 class="section-heading"><span class="section-number">01.</span>소개</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        소프트웨어의 본질은 <strong>현실의 어려움을 해결하는 것</strong>이라고 생각합니다.
-                        그래서 기능을 만들기 전에 현장에서 누가 어떤 불편을 겪는지부터 파악하고,
-                        기획 단계부터 참여해 기술적 의사결정을 주도해 왔습니다.
-                    </p>
-                    <p>
-                        라톤테크에서는 금융·공공기관에 IAM/SSO 솔루션을 구축하며 대규모 계정 관리와
-                        이기종 시스템 연동을 다뤘고, 현재는 셀바스AI에서 의료 장비 실시간 모니터링,
-                        오디오북 음성합성(TTS) 등 프로덕트 서버를 개발하고 있습니다.
-                        팀 안에서는 누구나 개발·배포를 자동으로 진행할 수 있는 플랫폼과
-                        AI Agent 가이드를 만들어 운영합니다.
-                    </p>
-                    <p>
-                        <strong>DDD 기반 헥사고날 아키텍처</strong>로 유지보수 비용을 낮추고 확장성을 높이는 설계,
-                        그리고 실시간 데이터 파이프라인과 성능 최적화에 강점이 있습니다.
-                        매년 모교와 대학에서 프로그래밍 강의도 이어가고 있습니다.
-                    </p>
+        <div class="layout wrap">
+            <nav class="toc" aria-label="페이지 목차">
+                <ol>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#work">대표 작업</a></li>
+                    <li><a href="#experience">경력</a></li>
+                    <li><a href="#practice">일하는 방식</a></li>
+                    <li><a href="#projects">사이드 프로젝트</a></li>
+                    <li><a href="#background">강의 · 학력 · 자격</a></li>
+                    <li><a href="#skills">다뤄 온 기술</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ol>
+            </nav>
 
-                    <div class="about-meta">
-                        <div class="about-meta-block">
-                            <h3 class="about-meta-title">학력</h3>
-                            <ul>
-                                <li>숭실대학교 미디어경영학과 <span class="muted">2020 – 2024</span></li>
-                                <li>한세사이버보안고등학교 <span class="muted">2013 – 2016</span></li>
-                            </ul>
-                        </div>
-                        <div class="about-meta-block">
-                            <h3 class="about-meta-title">자격 · 병역</h3>
-                            <ul>
-                                <li>정보처리기사</li>
-                                <li>산업기능요원 만기전역 <span class="muted">2017 – 2019</span></li>
+            <div class="sections">
+            <!-- 소개 -->
+            <section id="about" class="block">
+                    <h2 class="block-title">소개</h2>
+                    <div class="prose">
+                        <p>
+                            소프트웨어의 본질은 <strong>현실의 어려움을 해결하는 것</strong>이라고 생각합니다.
+                            그래서 기능을 만들기 전에 현장에서 누가 어떤 불편을 겪는지에 집중하며,
+                            기획 단계부터 참여해 기술적 의사결정을 주도해 왔습니다.
+                        </p>
+                        <p>
+                            한 번 만들고 끝나는 시스템이 아니라 현장에서 오래 쓰일 수 있도록 유지보수와 확장이 쉬운 구조를 고민하고,
+                            실시간 데이터 처리나 성능 문제는 원인을 끝까지 추적해 풉니다.
+                            팀 안에서는 누구나 개발·배포를 자동으로 진행할 수 있는 플랫폼과 <strong>AI Agent 하네스</strong>를 만들어 운영하고,
+                            매년 모교와 대학에서 프로그래밍 강의도 이어가고 있습니다.
+                        </p>
+                    </div>
+            </section>
+
+            <!-- 대표 작업 -->
+            <section id="work" class="block">
+                    <h2 class="block-title">대표 작업</h2>
+                    <div class="cases">
+                        <article class="case" id="case-monitoring">
+                            <p class="case-meta">셀바스AI</p>
+                            <h3 class="case-title">의료 장비 실시간 모니터링 웹 서비스</h3>
+                            <dl class="case-body">
+                                <div><dt>현장</dt><dd>기존 모니터링 SW는 스탠드얼론으로 동작해 설치된 PC 한 대에서만 볼 수 있었고, 연결 가능한 장비 수가 적으며 이력 확인과 기능 확장이 어려웠습니다.</dd></div>
+                                <div><dt>해결</dt><dd>서버 기반 웹 서비스로 전환했습니다. OLAP DB 기반 저장·조회 구조로 이력 조회를 뒷받침하고, 브로드캐스팅·구독 통신 아키텍처와 <span class="nowrap">JMS(ActiveMQ)로</span> 실시간 전달을 구현했습니다.</dd></div>
+                                <div class="case-change"><dt>변화</dt><dd><span class="before">PC 한 대에서만 확인</span><span class="after"><span class="arrow" aria-hidden="true">→</span>여러 PC의 브라우저에서 병동별로 더 많은 장비와 환자를 실시간 모니터링하고, 응급 알람을 즉시 확인</span></dd></div>
+                            </dl>
+                        </article>
+
+                        <article class="case" id="case-telemedicine">
+                            <p class="case-meta">셀바스AI</p>
+                            <h3 class="case-title">군 응급 원격진료 서비스</h3>
+                            <dl class="case-body">
+                                <div><dt>현장</dt><dd>군 특성상 의료진이 없는 오지에서도 응급 환자가 발생할 수 있습니다.</dd></div>
+                                <div><dt>해결</dt><dd>상황실이 사고 현장과 군 병원 의료진을 화상으로 연결하는 서비스를 개발했습니다. Coturn 중계 서버로 폐쇄망–인터넷망 사이 WebRTC 연결을 열어 Docker Swarm 환경에서 운용했고, STT API 게이트웨이를 신규 개발해 실시간 자막을 스트리밍했습니다.</dd></div>
+                                <div class="case-change"><dt>변화</dt><dd><span class="before">현장에 의료진이 없음</span><span class="after"><span class="arrow" aria-hidden="true">→</span>군 병원 의료진이 화상으로 현장 응급 조치를 지도</span></dd></div>
+                            </dl>
+                        </article>
+
+                        <article class="case" id="case-tts">
+                            <p class="case-meta">셀바스AI</p>
+                            <h3 class="case-title">오디오북 특화 음성합성(TTS) 플랫폼</h3>
+                            <dl class="case-body">
+                                <div><dt>현장</dt><dd>오디오북을 만들려면 성우를 고용해 사람이 일일이 녹음해야 합니다.</dd></div>
+                                <div><dt>해결</dt><dd>Go 기반 TTS 서비스의 리브랜딩·고도화 아키텍처를 설계했습니다. pprof로 OOM을 추적해 튜닝하고 Race condition을 해결해 서비스를 안정화했으며, ELK 모니터링과 결제·DB 공통 모듈화를 진행했습니다. 원고를 오디오북으로 옮기기 위해 ePub/PDF 파서, <span class="nowrap">OCR(PP-Structure),</span> DAW 편집 기능을 구현했습니다.</dd></div>
+                                <div class="case-change"><dt>변화</dt><dd><span class="before">성우가 일일이 녹음</span><span class="after"><span class="arrow" aria-hidden="true">→</span>성우 없이 대용량 텍스트를 오디오북으로 생산</span></dd></div>
+                            </dl>
+                        </article>
+                    </div>
+            </section>
+
+            <!-- 경력 -->
+            <section id="experience" class="block">
+                    <h2 class="block-title">경력</h2>
+                    <ol class="jobs">
+                        <li class="job">
+                            <div class="job-head">
+                                <h3>셀바스AI</h3>
+                                <span class="job-period num">2022.07 – 현재</span>
+                            </div>
+                            <p class="job-role">백엔드 엔지니어</p>
+                            <ul class="job-items">
+                                <li><strong>의료 장비 실시간 모니터링 웹 서비스</strong> 스탠드얼론 SW를 서버 기반 웹 서비스로 전환. <a href="#case-monitoring">대표 작업 보기</a></li>
                                 <li>
-                                    <details class="cert-more">
-                                        <summary>그 외 자격증</summary>
-                                        <ul>
-                                            <li>정보기기운용기능사</li>
-                                            <li>리눅스마스터 2급</li>
-                                        </ul>
-                                    </details>
+                                    <strong>체성분 분석 모바일 앱 서버</strong>
+                                    측정 장비를 저렴하게 보급하려면 디스플레이를 없애거나 줄여야 해, 앱이 장비의 디스플레이 역할을 하도록 백엔드 개발을 주도.
+                                    Spring·AWS로 기기 데이터 수집부터 변화 추이·리포트 제공까지 구축하고, 한 장비를 여러 사람이 함께 쓸 수 있도록 구성.
+                                    MVP 코드베이스를 DDD 기반 헥사고날 아키텍처로 리팩토링하고 애자일 프로젝트 관리 체계도 직접 구축.
+                                </li>
+                                <li><strong>군 응급 원격진료 서비스</strong> 오지 응급 현장과 군 병원 의료진을 화상으로 연결. <a href="#case-telemedicine">대표 작업 보기</a></li>
+                                <li><strong>오디오북 특화 음성합성(TTS) 플랫폼</strong> 성우 없이 대용량 텍스트를 오디오북으로 생산. <a href="#case-tts">대표 작업 보기</a></li>
+                            </ul>
+                        </li>
+                        <li class="job">
+                            <div class="job-head">
+                                <h3>라톤테크</h3>
+                                <span class="job-period num">2015.08 – 2022.06</span>
+                            </div>
+                            <p class="job-role">IAM/SSO 솔루션 구축 · 일부 프로젝트 PL</p>
+                            <ul class="job-items">
+                                <li>
+                                    <strong>금융·공공 IAM/SSO 솔루션 구축</strong>
+                                    수십만 계정이 여러 이기종 <span class="nowrap">시스템(EAI·API·DB)에</span> 흩어져 있어 사용자는 시스템마다 로그인하고 관리자는 계정을 따로 관리해야 하는 문제를 해결.
+                                    국민건강보험공단, 한화생명, NH농협, 한국은행, 카카오뱅크, SK플래닛 등의 차세대 시스템 전환 프로젝트에서
+                                    인증 아키텍처를 설계·구현하고 이기종 시스템 연동과 OTP 인증 서버 구축을 담당.
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-photo">
-                    <div class="photo-frame">
-                        <img src="images/profile.png" alt="강범준 프로필 사진" width="300" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="section skills-section">
-            <h2 class="section-heading"><span class="section-number">02.</span>기술 스택</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6"></path><path d="M8 6l-6 6 6 6"></path></svg>
-                    </div>
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>Go</li>
-                        <li>Python</li>
-                        <li>Dart</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                    </div>
-                    <h3>Frameworks</h3>
-                    <ul>
-                        <li>Spring</li>
-                        <li>Flutter</li>
-                        <li>gRPC</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
-                    </div>
-                    <h3>Data</h3>
-                    <ul>
-                        <li>SQL · NoSQL</li>
-                        <li>시계열 · OLAP DB</li>
-                        <li>ELK Stack</li>
-                        <li>JMS · ActiveMQ</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
-                    </div>
-                    <h3>Cloud &amp; Infra</h3>
-                    <ul>
-                        <li>AWS</li>
-                        <li>Docker</li>
-                        <li>Docker Swarm</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-                    </div>
-                    <h3>Architecture</h3>
-                    <ul>
-                        <li>Domain-Driven Design</li>
-                        <li>Hexagonal Architecture</li>
-                        <li>이벤트 기반 비동기</li>
-                        <li>실시간 데이터 파이프라인</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience -->
-        <section id="experience" class="section experience-section">
-            <h2 class="section-heading"><span class="section-number">03.</span>경력</h2>
-
-            <div class="timeline">
-                <!-- 셀바스AI -->
-                <article class="timeline-item">
-                    <div class="timeline-head">
-                        <h3 class="timeline-company">셀바스AI</h3>
-                        <span class="timeline-period">2022.07 – 현재</span>
-                    </div>
-                    <p class="timeline-role">백엔드 엔지니어 · 프로덕트 서버 개발</p>
-                    <ul class="timeline-projects">
-                        <li>
-                            <h4>의료 장비 실시간 모니터링 웹 서비스</h4>
-                            <p class="project-problem"><span class="project-label">현장</span>기존 모니터링 SW는 스탠드얼론으로 동작해 설치된 PC 한 대에서만 볼 수 있었고, 연결 가능한 장비 수가 적으며 이력 확인과 기능 확장이 어려움.</p>
-                            <p class="project-solution"><span class="project-label">해결</span>서버 기반 웹 서비스로 전환해, 의료진이 여러 PC의 브라우저에서 병동별로 더 많은 장비와 환자를 한곳에서 실시간 모니터링하고 응급 알람을 즉시 확인할 수 있도록 설계·개발. OLAP DB 기반 저장/조회 구조로 이력 조회를 뒷받침하고, 브로드캐스팅·구독 통신 아키텍처와 JMS(ActiveMQ)로 실시간 전달을 구현.</p>
-                            <ul class="tag-row"><li>Java · Spring</li><li>OLAP</li><li>ActiveMQ</li></ul>
                         </li>
-                        <li>
-                            <h4>체성분 분석 모바일 앱 서버</h4>
-                            <p class="project-problem"><span class="project-label">현장</span>측정 장비를 저렴하게 보급하려면 디스플레이를 없애거나 줄여야 하지만, 그러면 사용자가 결과를 제대로 확인하기 어려움.</p>
-                            <p class="project-solution"><span class="project-label">해결</span>앱이 장비의 디스플레이 역할을 하도록 백엔드 개발을 주도. Spring·AWS로 기기 데이터 수집부터 변화 추이·리포트 제공까지 구축하고, 한 장비를 여러 사람이 함께 쓸 수 있도록 구성. MVP 코드베이스를 DDD 기반 헥사고날 아키텍처로 리팩토링하고 애자일 프로젝트 관리 체계도 직접 구축.</p>
-                            <ul class="tag-row"><li>Spring</li><li>AWS</li><li>DDD · 헥사고날</li></ul>
-                        </li>
-                        <li>
-                            <h4>군 응급 원격진료 서비스</h4>
-                            <p class="project-problem"><span class="project-label">현장</span>군 특성상 의료진이 없는 오지에서도 응급 환자가 발생할 수 있음.</p>
-                            <p class="project-solution"><span class="project-label">해결</span>상황실이 사고 현장과 군 병원 의료진을 화상으로 연결해, 의료진이 현장 응급 조치를 지도할 수 있는 서비스를 개발. Coturn 중계 서버로 폐쇄망–인터넷망 사이 WebRTC 연결을 열고 Docker Swarm 환경에서 운용했으며, STT API 게이트웨이를 신규 개발해 실시간 자막을 스트리밍.</p>
-                            <ul class="tag-row"><li>WebRTC</li><li>Docker Swarm</li><li>STT · API GW</li></ul>
-                        </li>
-                        <li>
-                            <h4>오디오북 특화 음성합성(TTS) 플랫폼</h4>
-                            <p class="project-problem"><span class="project-label">현장</span>오디오북을 만들려면 성우를 고용해 사람이 일일이 녹음해야 함.</p>
-                            <p class="project-solution"><span class="project-label">해결</span>성우 없이도 대용량 텍스트를 오디오북으로 생산할 수 있는 TTS 플랫폼을 제공. Go 기반 서비스의 리브랜딩·고도화 아키텍처를 설계하고, pprof로 OOM을 추적해 튜닝하고 Race condition을 해결해 안정화. ELK 모니터링과 결제·DB 공통 모듈화를 진행하고, ePub/PDF 파서, OCR(PP-Structure), DAW 편집 기능을 구현.</p>
-                            <ul class="tag-row"><li>Go</li><li>pprof</li><li>ELK</li><li>OCR</li></ul>
-                        </li>
-                    </ul>
-                </article>
-
-                <!-- 라톤테크 -->
-                <article class="timeline-item">
-                    <div class="timeline-head">
-                        <h3 class="timeline-company">라톤테크</h3>
-                        <span class="timeline-period">2015.08 – 2022.06</span>
-                    </div>
-                    <p class="timeline-role">IAM/SSO 솔루션 구축 · 일부 프로젝트 PL</p>
-                    <ul class="timeline-projects">
-                        <li>
-                            <h4>금융·공공 IAM/SSO 인증 인프라</h4>
-                            <p class="project-problem"><span class="project-label">현장</span>수십만 계정이 여러 이기종 시스템(EAI·API·DB)에 흩어져 있어, 사용자는 시스템마다 로그인하고 관리자는 계정을 따로 관리해야 함.</p>
-                            <p class="project-solution"><span class="project-label">해결</span>국민건강보험공단, 한화생명, NH농협, 한국은행, 카카오뱅크, SK플래닛 등의 차세대 시스템 전환 프로젝트에 IAM/SSO 솔루션을 구축. 인증 아키텍처를 설계·구현하고 이기종 시스템 연동과 OTP 인증 서버 구축을 담당.</p>
-                            <ul class="tag-row"><li>IAM · SSO</li><li>OTP</li><li>EAI 연동</li></ul>
-                        </li>
-                    </ul>
-                </article>
-            </div>
+                    </ol>
+            </section>
 
             <!-- 일하는 방식 -->
-            <div class="practice">
-                <h3 class="practice-heading">일하는 방식</h3>
-                <ul class="timeline-projects">
-                        <li>
-                            <h4>누구나 쓰는 팀 개발 플랫폼 · AI Agent 가이드</h4>
-                            <p class="project-problem"><span class="project-label">현장</span>개발·배포 과정이 특정 지식을 가진 사람에게 의존하고, 팀원마다 AI 산출물의 품질이 달라짐.</p>
-                            <p class="project-solution"><span class="project-label">해결</span>지식이 없어도 개발 요소와 배포를 자동으로 진행할 수 있는 팀 내 플랫폼을 만들어 배포·운영. AI Agent 가이드를 유지관리하며 모든 팀원의 AI 산출물이 일정한 품질을 유지하도록 꾸준히 개선. 데이터 검증·마이그레이션 툴 개발, 코드 컨벤션 문서화, 사내 기술 세미나도 같은 맥락에서 진행.</p>
-                            <ul class="tag-row"><li>개발 플랫폼</li><li>배포 자동화</li><li>AI Agent 가이드</li></ul>
+            <section id="practice" class="block">
+                    <h2 class="block-title">일하는 방식</h2>
+                    <article class="case">
+                        <h3 class="case-title">누구나 쓰는 팀 개발 플랫폼 · AI Agent 하네스</h3>
+                        <dl class="case-body">
+                            <div><dt>현장</dt><dd>개발·배포 과정이 특정 지식을 가진 사람에게 의존하고, 팀원마다 AI 산출물의 품질이 달라집니다.</dd></div>
+                            <div><dt>해결</dt><dd>지식이 없어도 개발 요소와 배포를 자동으로 진행할 수 있는 팀 내 플랫폼을 만들어 배포·운영합니다. AI Agent 하네스를 유지관리하며 모든 팀원의 AI 산출물이 일정한 품질을 유지하도록 꾸준히 개선합니다. 데이터 검증·마이그레이션 툴 개발, 코드 컨벤션 문서화, 사내 기술 세미나도 같은 맥락에서 진행했습니다.</dd></div>
+                        </dl>
+                    </article>
+            </section>
+
+            <!-- 사이드 프로젝트 -->
+            <section id="projects" class="block">
+                    <h2 class="block-title">사이드 프로젝트</h2>
+                    <ul class="side-projects">
+                        <li class="side-featured">
+                            <h3><a href="https://kaq6822.github.io/smulsmul/" target="_blank" rel="noopener noreferrer">smulsmul <span class="ext" aria-hidden="true">↗</span></a></h3>
+                            <p>일상을 조금 더 다채롭게 만드는 모바일 앱을 직접 기획·개발하는 개인 앱 브랜드입니다. <span class="nowrap">컬러워크</span>, <span class="nowrap">클디</span>, <span class="nowrap">DevVocab</span>, <span class="nowrap">옷장이모</span> 등 여러 앱을 이곳에 모아 두었습니다.</p>
+                            <p class="side-link"><a href="https://kaq6822.github.io/smulsmul/" target="_blank" rel="noopener noreferrer">앱 모두 보기 →</a></p>
                         </li>
-                </ul>
+                        <li>
+                            <h3><a href="https://github.com/kaq6822/taskflow-mcp-server" target="_blank" rel="noopener noreferrer">TaskFlow MCP Server <span class="ext" aria-hidden="true">↗</span></a></h3>
+                            <p>AI 에이전트가 1차 사용자인 워크플로 오케스트레이션 플랫폼. Scope 권한·argv allowlist·hash-chained 감사로 에이전트 실행을 통제.</p>
+                        </li>
+                        <li>
+                            <h3><a href="https://github.com/kaq6822/gemma_toy_project" target="_blank" rel="noopener noreferrer">Gemma Chat <span class="ext" aria-hidden="true">↗</span></a></h3>
+                            <p>Google Gemma 모델을 온디바이스로 실행하는 Flutter AI 채팅 앱. 실시간 스트리밍 대화와 이미지 멀티모달 질의를 지원.</p>
+                        </li>
+                    </ul>
+            </section>
+
+            <!-- 강의 · 학력 · 자격 -->
+            <section id="background" class="block">
+                    <h2 class="block-title">강의 · 학력 · 자격</h2>
+                    <div class="meta-grid">
+                        <div>
+                            <h3>강의</h3>
+                            <ul>
+                                <li><span class="nowrap">숭실대학교 출강</span> <span class="num muted nowrap">2025 – 현재</span><span class="sub"><span class="nowrap">「모바일 앱 프로그래밍」(Flutter)</span></span><span class="sub"><span class="nowrap">디지털미디어학과</span> · <span class="nowrap">미디어경영학과</span></span></li>
+                                <li><span class="nowrap">한세사이버보안고등학교</span> <span class="num muted nowrap">2023 – 현재</span><span class="sub">모교 <span class="nowrap">취업반·웹 프로그래밍</span> 강의 <span class="nowrap">(Go, Java/Spring, Flutter)</span></span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>학력</h3>
+                            <ul>
+                                <li><span class="nowrap">숭실대학교 미디어경영학과</span> <span class="num muted nowrap">2020 – 2024</span></li>
+                                <li><span class="nowrap">한세사이버보안고등학교</span> <span class="num muted nowrap">2013 – 2016</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>자격 · 병역</h3>
+                            <ul>
+                                <li>정보처리기사</li>
+                                <li><span class="nowrap">산업기능요원 만기전역</span> <span class="num muted nowrap">2017 – 2019</span></li>
+                                <li class="muted"><span class="nowrap">정보기기운용기능사</span> · <span class="nowrap">리눅스마스터 2급</span></li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- 다뤄 온 기술 -->
+            <section id="skills" class="block">
+                    <h2 class="block-title">다뤄 온 기술</h2>
+                    <div>
+                        <p class="skills-lead">기술은 문제에 맞춰 고르는 도구라고 생각합니다. 지금까지 실무와 프로젝트에서 다뤄 온 기술입니다.</p>
+                        <dl class="skills">
+                            <div><dt>언어</dt><dd>Java · Spring, Go, Python, Flutter · Dart</dd></div>
+                            <div><dt>설계</dt><dd>DDD · 헥사고날, 이벤트 기반 비동기, 실시간 데이터 파이프라인</dd></div>
+                            <div><dt>데이터</dt><dd>SQL · NoSQL, 시계열 · OLAP DB, ELK Stack, JMS · ActiveMQ</dd></div>
+                            <div><dt>인프라·통신</dt><dd>AWS, Docker, Docker Swarm, gRPC</dd></div>
+                        </dl>
+                    </div>
+            </section>
+
+            <!-- 연락처 -->
+            <section id="contact" class="block">
+                    <h2 class="block-title">연락처</h2>
+                    <div class="contact">
+                        <p>현장의 문제를 함께 풀 기회라면 언제든 환영합니다. 메일로 편하게 연락 주세요.</p>
+                        <p class="contact-email"><a href="mailto:kaq6822@naver.com">kaq6822@naver.com</a></p>
+                        <div class="icon-links">
+                            <a href="https://www.linkedin.com/in/beomjun6551" class="icon-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn 프로필" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                            <a href="https://github.com/kaq6822" class="icon-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub 프로필" title="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+                            <a href="mailto:kaq6822@naver.com" class="icon-btn" aria-label="메일 보내기" title="메일 보내기"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg></a>
+                        </div>
+                    </div>
+            </section>
             </div>
-
-            <!-- 강의 -->
-            <div class="teaching">
-                <h3 class="teaching-heading">교육 · 강의</h3>
-                <div class="teaching-grid">
-                    <div class="teaching-card">
-                        <span class="teaching-org">숭실대학교</span>
-                        <p class="teaching-desc">디지털미디어학과 · 미디어경영학과에 <strong>출강</strong>하여 「모바일 앱 프로그래밍」(Flutter) 전공 선택 과목을 강의.</p>
-                        <span class="teaching-period">2025 – 현재</span>
-                    </div>
-                    <div class="teaching-card">
-                        <span class="teaching-org">한세사이버보안고등학교</span>
-                        <p class="teaching-desc">모교에서 매년 취업반·웹 프로그래밍 강의 진행 (Go, Java/Spring, Flutter).</p>
-                        <span class="teaching-period">2023 – 현재</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Side Projects -->
-        <section id="projects" class="section projects-section">
-            <h2 class="section-heading"><span class="section-number">04.</span>사이드 프로젝트</h2>
-            <p class="section-lead">업무 외에 개인적으로 탐구하며 만든 오픈소스 프로젝트들입니다.</p>
-
-            <div class="other-grid">
-                <article class="other-card">
-                    <div class="other-top">
-                        <span class="folder-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                        </span>
-                        <a href="https://github.com/kaq6822/taskflow-mcp-server" target="_blank" rel="noopener noreferrer" aria-label="taskflow-mcp-server GitHub 저장소" class="other-ext">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                        </a>
-                    </div>
-                    <h4 class="other-title"><a href="https://github.com/kaq6822/taskflow-mcp-server" target="_blank" rel="noopener noreferrer">TaskFlow MCP Server</a></h4>
-                    <p class="other-description">AI 에이전트가 1차 사용자인 워크플로 오케스트레이션 플랫폼. Scope 권한·argv allowlist·hash-chained 감사로 에이전트 실행을 통제.</p>
-                    <ul class="other-tech"><li>Python · FastAPI</li><li>MCP</li></ul>
-                </article>
-
-                <article class="other-card">
-                    <div class="other-top">
-                        <span class="folder-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                        </span>
-                        <a href="https://github.com/kaq6822/gemma_toy_project" target="_blank" rel="noopener noreferrer" aria-label="gemma_toy_project GitHub 저장소" class="other-ext">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                        </a>
-                    </div>
-                    <h4 class="other-title"><a href="https://github.com/kaq6822/gemma_toy_project" target="_blank" rel="noopener noreferrer">Gemma Chat</a></h4>
-                    <p class="other-description">Google Gemma 모델을 온디바이스로 실행하는 Flutter AI 채팅 앱. 실시간 스트리밍 대화와 이미지 멀티모달 질의를 지원.</p>
-                    <ul class="other-tech"><li>Flutter</li><li>On-device LLM</li></ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="section contact-section">
-            <p class="contact-label"><span class="section-number">05.</span>연락처</p>
-            <h2 class="contact-title">함께 일해요</h2>
-            <p class="contact-description">
-                새로운 기회와 협업 제안을 언제나 환영합니다.
-                프로젝트 문의든 가벼운 인사든 편하게 메일 주세요.
-                확인하는 대로 답장드리겠습니다.
-            </p>
-            <a href="mailto:kaq6822@naver.com" class="btn btn-primary btn-lg">메일 보내기</a>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -389,7 +274,7 @@
             <li><a href="https://www.linkedin.com/in/beomjun6551" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             <li><a href="mailto:kaq6822@naver.com">이메일</a></li>
         </ul>
-        <p class="footer-credit">강범준이 디자인하고 직접 제작 · © <span id="year">2026</span></p>
+        <p class="footer-credit">© <span id="year">2026</span> 강범준</p>
     </footer>
 
     <script src="script.js"></script>
