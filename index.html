@@ -53,7 +53,6 @@
                         기술보다 그 기술로 풀어야 할 현장의 문제를 먼저 봅니다.
                         병동 환자 실시간 모니터링, 오지 응급 환자를 위한 원격진료, 성우 없이 만드는 오디오북까지
                         오프라인에서 사람이 겪는 어려움을 소프트웨어로 덜어내는 일을 10년 넘게 해 왔습니다.
-                        도구와 언어는 문제에 맞춰 고르고, 요즘은 AI Agent와 함께 더 빠르게 풀어 갑니다.
                     </p>
                     <div class="icon-links">
                         <a href="https://www.linkedin.com/in/beomjun6551" class="icon-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn 프로필" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
@@ -71,12 +70,11 @@
             <nav class="toc" aria-label="페이지 목차">
                 <ol>
                     <li><a href="#about">소개</a></li>
-                    <li><a href="#work">대표 작업</a></li>
+                    <li><a href="#work">주요 프로젝트</a></li>
                     <li><a href="#experience">경력</a></li>
-                    <li><a href="#practice">일하는 방식</a></li>
-                    <li><a href="#projects">사이드 프로젝트</a></li>
-                    <li><a href="#background">강의 · 학력 · 자격</a></li>
-                    <li><a href="#skills">다뤄 온 기술</a></li>
+                    <li><a href="#projects">개인 프로젝트</a></li>
+                    <li><a href="#background">학력 · 자격 · 강의</a></li>
+                    <li><a href="#skills">기술</a></li>
                     <li><a href="#contact">연락처</a></li>
                 </ol>
             </nav>
@@ -100,9 +98,9 @@
                     </div>
             </section>
 
-            <!-- 대표 작업 -->
+            <!-- 주요 프로젝트 -->
             <section id="work" class="block">
-                    <h2 class="block-title">대표 작업</h2>
+                    <h2 class="block-title">주요 프로젝트</h2>
                     <div class="cases">
                         <article class="case" id="case-monitoring">
                             <p class="case-meta">셀바스AI</p>
@@ -110,7 +108,7 @@
                             <dl class="case-body">
                                 <div><dt>현장</dt><dd>기존 모니터링 SW는 스탠드얼론으로 동작해 설치된 PC 한 대에서만 볼 수 있었고, 연결 가능한 장비 수가 적으며 이력 확인과 기능 확장이 어려웠습니다.</dd></div>
                                 <div><dt>해결</dt><dd>서버 기반 웹 서비스로 전환했습니다. OLAP DB 기반 저장·조회 구조로 이력 조회를 뒷받침하고, 브로드캐스팅·구독 통신 아키텍처와 <span class="nowrap">JMS(ActiveMQ)로</span> 실시간 전달을 구현했습니다.</dd></div>
-                                <div class="case-change"><dt>변화</dt><dd><span class="before">PC 한 대에서만 확인</span><span class="after"><span class="arrow" aria-hidden="true">→</span>여러 PC의 브라우저에서 병동별로 더 많은 장비와 환자를 실시간 모니터링하고, 응급 알람을 즉시 확인</span></dd></div>
+                                <div class="case-change"><dt>결과</dt><dd><span class="before">PC 한 대에서만 확인</span><span class="after"><span class="arrow" aria-hidden="true">→</span>여러 PC의 브라우저에서 병동별로 더 많은 장비와 환자를 실시간 모니터링하고, 응급 알람을 즉시 확인</span></dd></div>
                             </dl>
                         </article>
 
@@ -120,17 +118,17 @@
                             <dl class="case-body">
                                 <div><dt>현장</dt><dd>군 특성상 의료진이 없는 오지에서도 응급 환자가 발생할 수 있습니다.</dd></div>
                                 <div><dt>해결</dt><dd>상황실이 사고 현장과 군 병원 의료진을 화상으로 연결하는 서비스를 개발했습니다. Coturn 중계 서버로 폐쇄망–인터넷망 사이 WebRTC 연결을 열어 Docker Swarm 환경에서 운용했고, STT API 게이트웨이를 신규 개발해 실시간 자막을 스트리밍했습니다.</dd></div>
-                                <div class="case-change"><dt>변화</dt><dd><span class="before">현장에 의료진이 없음</span><span class="after"><span class="arrow" aria-hidden="true">→</span>군 병원 의료진이 화상으로 현장 응급 조치를 지도</span></dd></div>
+                                <div class="case-change"><dt>결과</dt><dd><span class="before">현장에 의료진이 없음</span><span class="after"><span class="arrow" aria-hidden="true">→</span>군 병원 의료진이 화상으로 현장 응급 조치를 지도</span></dd></div>
                             </dl>
                         </article>
 
                         <article class="case" id="case-tts">
                             <p class="case-meta">셀바스AI</p>
-                            <h3 class="case-title">오디오북 특화 음성합성(TTS) 플랫폼</h3>
+                            <h3 class="case-title">음성합성(TTS) 오디오북 제작 플랫폼</h3>
                             <dl class="case-body">
                                 <div><dt>현장</dt><dd>오디오북을 만들려면 성우를 고용해 사람이 일일이 녹음해야 합니다.</dd></div>
                                 <div><dt>해결</dt><dd>Go 기반 TTS 서비스의 리브랜딩·고도화 아키텍처를 설계했습니다. pprof로 OOM을 추적해 튜닝하고 Race condition을 해결해 서비스를 안정화했으며, ELK 모니터링과 결제·DB 공통 모듈화를 진행했습니다. 원고를 오디오북으로 옮기기 위해 ePub/PDF 파서, <span class="nowrap">OCR(PP-Structure),</span> DAW 편집 기능을 구현했습니다.</dd></div>
-                                <div class="case-change"><dt>변화</dt><dd><span class="before">성우가 일일이 녹음</span><span class="after"><span class="arrow" aria-hidden="true">→</span>성우 없이 대용량 텍스트를 오디오북으로 생산</span></dd></div>
+                                <div class="case-change"><dt>결과</dt><dd><span class="before">성우가 일일이 녹음</span><span class="after"><span class="arrow" aria-hidden="true">→</span>성우 없이 대용량 텍스트를 오디오북으로 생산</span></dd></div>
                             </dl>
                         </article>
                     </div>
@@ -147,15 +145,15 @@
                             </div>
                             <p class="job-role">백엔드 엔지니어</p>
                             <ul class="job-items">
-                                <li><strong>의료 장비 실시간 모니터링 웹 서비스</strong> 스탠드얼론 SW를 서버 기반 웹 서비스로 전환. <a href="#case-monitoring">대표 작업 보기</a></li>
+                                <li><strong>의료 장비 실시간 모니터링 웹 서비스</strong> 스탠드얼론 SW를 서버 기반 웹 서비스로 전환. <a href="#case-monitoring">자세히</a></li>
                                 <li>
-                                    <strong>체성분 분석 모바일 앱 서버</strong>
+                                    <strong>체성분 측정 앱 서버</strong>
                                     측정 장비를 저렴하게 보급하려면 디스플레이를 없애거나 줄여야 해, 앱이 장비의 디스플레이 역할을 하도록 백엔드 개발을 주도.
                                     Spring·AWS로 기기 데이터 수집부터 변화 추이·리포트 제공까지 구축하고, 한 장비를 여러 사람이 함께 쓸 수 있도록 구성.
                                     MVP 코드베이스를 DDD 기반 헥사고날 아키텍처로 리팩토링하고 애자일 프로젝트 관리 체계도 직접 구축.
                                 </li>
-                                <li><strong>군 응급 원격진료 서비스</strong> 오지 응급 현장과 군 병원 의료진을 화상으로 연결. <a href="#case-telemedicine">대표 작업 보기</a></li>
-                                <li><strong>오디오북 특화 음성합성(TTS) 플랫폼</strong> 성우 없이 대용량 텍스트를 오디오북으로 생산. <a href="#case-tts">대표 작업 보기</a></li>
+                                <li><strong>군 응급 원격진료 서비스</strong> 오지 응급 현장과 군 병원 의료진을 화상으로 연결. <a href="#case-telemedicine">자세히</a></li>
+                                <li><strong>음성합성(TTS) 오디오북 제작 플랫폼</strong> 성우 없이 대용량 텍스트를 오디오북으로 생산. <a href="#case-tts">자세히</a></li>
                             </ul>
                         </li>
                         <li class="job">
@@ -176,21 +174,9 @@
                     </ol>
             </section>
 
-            <!-- 일하는 방식 -->
-            <section id="practice" class="block">
-                    <h2 class="block-title">일하는 방식</h2>
-                    <article class="case">
-                        <h3 class="case-title">누구나 쓰는 팀 개발 플랫폼 · AI Agent 하네스</h3>
-                        <dl class="case-body">
-                            <div><dt>현장</dt><dd>개발·배포 과정이 특정 지식을 가진 사람에게 의존하고, 팀원마다 AI 산출물의 품질이 달라집니다.</dd></div>
-                            <div><dt>해결</dt><dd>지식이 없어도 개발 요소와 배포를 자동으로 진행할 수 있는 팀 내 플랫폼을 만들어 배포·운영합니다. AI Agent 하네스를 유지관리하며 모든 팀원의 AI 산출물이 일정한 품질을 유지하도록 꾸준히 개선합니다. 데이터 검증·마이그레이션 툴 개발, 코드 컨벤션 문서화, 사내 기술 세미나도 같은 맥락에서 진행했습니다.</dd></div>
-                        </dl>
-                    </article>
-            </section>
-
-            <!-- 사이드 프로젝트 -->
+            <!-- 개인 프로젝트 -->
             <section id="projects" class="block">
-                    <h2 class="block-title">사이드 프로젝트</h2>
+                    <h2 class="block-title">개인 프로젝트</h2>
                     <ul class="side-projects">
                         <li class="side-featured">
                             <h3><a href="https://kaq6822.github.io/smulsmul/" target="_blank" rel="noopener noreferrer">smulsmul <span class="ext" aria-hidden="true">↗</span></a></h3>
@@ -208,17 +194,10 @@
                     </ul>
             </section>
 
-            <!-- 강의 · 학력 · 자격 -->
+            <!-- 학력 · 자격 · 강의 -->
             <section id="background" class="block">
-                    <h2 class="block-title">강의 · 학력 · 자격</h2>
+                    <h2 class="block-title">학력 · 자격 · 강의</h2>
                     <div class="meta-grid">
-                        <div>
-                            <h3>강의</h3>
-                            <ul>
-                                <li><span class="nowrap">숭실대학교 출강</span> <span class="num muted nowrap">2025 – 현재</span><span class="sub"><span class="nowrap">「모바일 앱 프로그래밍」(Flutter)</span></span><span class="sub"><span class="nowrap">디지털미디어학과</span> · <span class="nowrap">미디어경영학과</span></span></li>
-                                <li><span class="nowrap">한세사이버보안고등학교</span> <span class="num muted nowrap">2023 – 현재</span><span class="sub">모교 <span class="nowrap">취업반·웹 프로그래밍</span> 강의 <span class="nowrap">(Go, Java/Spring, Flutter)</span></span></li>
-                            </ul>
-                        </div>
                         <div>
                             <h3>학력</h3>
                             <ul>
@@ -234,14 +213,20 @@
                                 <li class="muted"><span class="nowrap">정보기기운용기능사</span> · <span class="nowrap">리눅스마스터 2급</span></li>
                             </ul>
                         </div>
+                        <div>
+                            <h3>강의</h3>
+                            <ul>
+                                <li><span class="nowrap">숭실대학교 출강</span> <span class="num muted nowrap">2025 – 현재</span><span class="sub"><span class="nowrap">「모바일 앱 프로그래밍」(Flutter)</span></span><span class="sub"><span class="nowrap">디지털미디어학과</span> · <span class="nowrap">미디어경영학과</span></span></li>
+                                <li><span class="nowrap">한세사이버보안고등학교</span> <span class="num muted nowrap">2023 – 현재</span><span class="sub">모교 <span class="nowrap">취업반·웹 프로그래밍</span> 강의 <span class="nowrap">(Go, Java/Spring, Flutter)</span></span></li>
+                            </ul>
+                        </div>
                     </div>
             </section>
 
-            <!-- 다뤄 온 기술 -->
+            <!-- 기술 -->
             <section id="skills" class="block">
-                    <h2 class="block-title">다뤄 온 기술</h2>
+                    <h2 class="block-title">기술</h2>
                     <div>
-                        <p class="skills-lead">기술은 문제에 맞춰 고르는 도구라고 생각합니다. 지금까지 실무와 프로젝트에서 다뤄 온 기술입니다.</p>
                         <dl class="skills">
                             <div><dt>언어</dt><dd>Java · Spring, Go, Python, Flutter · Dart</dd></div>
                             <div><dt>설계</dt><dd>DDD · 헥사고날, 이벤트 기반 비동기, 실시간 데이터 파이프라인</dd></div>

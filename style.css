@@ -382,7 +382,7 @@ p, li, dd {
     margin-top: 16px;
 }
 
-/* ---------- 케이스 (현장 → 해결 → 변화) ---------- */
+/* ---------- 케이스 (현장 → 해결 → 결과) ---------- */
 .cases {
     display: flex;
     flex-direction: column;
@@ -436,7 +436,7 @@ p, li, dd {
     font-weight: 600;
 }
 
-/* 변화: 1줄 Before(취소선) / 2줄 → After */
+/* 결과: 1줄 Before(취소선) / 2줄 → After */
 .case-change .before,
 .case-change .after {
     display: block;
@@ -575,7 +575,7 @@ p, li, dd {
     font-size: 16px;
 }
 
-/* ---------- 사이드 프로젝트 ---------- */
+/* ---------- 개인 프로젝트 ---------- */
 .side-projects > li + li {
     margin-top: 32px;
 }
